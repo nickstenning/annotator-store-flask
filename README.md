@@ -8,7 +8,7 @@ You'll need a recent version of [python][1] (>=2.6). This code relies on the [`f
 
 The quickest way to get going assumes you have the `pip` and `virtualenv` tools installed (protip: `easy_install virtualenv` will get them both). Run the following in the repository root:
 
-    pip -E pyenv -r requirements
+    pip -E pyenv install -r requirements
     source pyenv/bin/activate
     cp annotator.cfg.example annotator.cfg
     python run.py
@@ -42,7 +42,7 @@ The "[]" at the end indicates the empty list for your annotations. There are no 
 
 ## Running tests
 
-Running `pip -E pyenv -r requirements` or similar, as described above, should have installed `nose` for you. In the virtualenv, you should be able to run the tests as follows:
+Running `pip -E pyenv install -r requirements` or similar, as described above, should have installed `nose` for you. In the virtualenv, you should be able to run the tests as follows:
 
     $ nosetests
     .....................
