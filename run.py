@@ -19,7 +19,7 @@ if __name__ == '__main__':
     store.setup_app()
 
     # For testing purposes only
-    if store.app.config['TEST_CONSUMER']:
+    if store.app.config.get('TEST_CONSUMER'):
         from annotator.test_consumer import consumer
         consumer.test_consumer_key  = store.app.config['TEST_CONSUMER_KEY']
         consumer.test_consumer_user = store.app.config['TEST_CONSUMER_USER']
